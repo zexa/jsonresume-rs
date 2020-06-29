@@ -6,7 +6,7 @@ mod tests {
     }
 }
 
-struct JsonResume {
+pub struct JsonResume {
     basics: Option<Basics>,
     work: Option<Vec<Work>>,
     volunteer: Option<Vec<Volunteer>>,
@@ -19,7 +19,7 @@ struct JsonResume {
     references: Option<Vec<Reference>>,
 }
 
-struct Basics {
+pub struct Basics {
     name: Option<String>,
     label: Option<String>,
     picture: Option<String>,
@@ -31,7 +31,7 @@ struct Basics {
     profiles: Option<Vec<Profile>>,
 }
 
-struct Location {
+pub struct Location {
     address: Option<String>,
     postalCode: Option<String>,
     city: Option<String>,
@@ -39,13 +39,13 @@ struct Location {
     region: Option<String>,
 }
 
-struct Profile {
+pub struct Profile {
     network: Option<String>,
     username: Option<String>,
     url: Option<String>,
 }
 
-struct Work {
+pub struct Work {
     company: Option<String>,
     position: Option<String>,
     website: Option<String>,
@@ -54,7 +54,7 @@ struct Work {
     highlights: Option<Vec<String>>,
 }
 
-struct Volunteer {
+pub struct Volunteer {
     organization: Option<String>,
     position: Option<String>,
     website: Option<String>,
@@ -64,7 +64,7 @@ struct Volunteer {
     highlights: Option<Vec<String>>,
 }
 
-struct Education {
+pub struct Education {
     institution: Option<String>,
     area: Option<String>,
     studyType: Option<String>,
@@ -74,14 +74,14 @@ struct Education {
     courses: Option<Vec<String>>,
 }
 
-struct Award {
+pub struct Award {
     title: Option<String>,
     date: Option<String>,
     awarder: Option<String>,
     summary: Option<String>,
 }
 
-struct Publication {
+pub struct Publication {
     name: Option<String>,
     publisher: Option<String>,
     releaseDate: Option<String>,
@@ -89,23 +89,23 @@ struct Publication {
     summary: Option<String>,
 }
 
-struct Skill {
+pub struct Skill {
     name: Option<String>,
     level: Option<String>,
     keywords: Option<Vec<String>>,
 }
 
-struct Language {
+pub struct Language {
     language: Option<String>,
     fluency: Option<String>,
 }
 
-struct Interest {
+pub struct Interest {
     name: Option<String>,
     keywords: Option<Vec<String>>,
 }
 
-struct Reference {
+pub struct Reference {
     name: Option<String>,
     reference: Option<String>,
 }
